@@ -38,8 +38,8 @@ export class Input{
   }
   keyReleased(key){
     const index = this.keys.indexOf(key)
-    if(index === -1) return
-    this.keys.splice(index, 1)
+    if(index === -1)
+    return this.keys.splice(index, 1)
   }
   get lastKey(){
     return this.keys[0]
